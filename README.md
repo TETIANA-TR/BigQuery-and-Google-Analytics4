@@ -1,4 +1,5 @@
 # BigQuery-and-Google-Analytics-4
+https://console.cloud.google.com/bigquery?ws=!1m7!1m6!12m5!1m3!1sstarry-argon-456808-t3!2sus-central1!3s61a110b5-4224-4c74-b131-7be14ad29953!2e1
 Conversion calculation by date and traffic channel (Level Medium):
 I created a query to retrieve a table with information about conversions from the beginning of the session to the purchase. The resulting table contains the following fields:
 event_date — the start date of the session, obtained from the event_timestamp field.
