@@ -1,28 +1,28 @@
-# BigQuery-and-Google-Analytics-4
-https://console.cloud.google.com/bigquery?ws=!1m7!1m6!12m5!1m3!1sstarry-argon-456808-t3!2sus-central1!3sf64a6256-210f-4423-95b4-e193c1fe438f!2e1
-Conversion calculation by date and traffic channel (Level Medium):
-I created a query to retrieve a table with information about conversions from the beginning of the session to the purchase. The resulting table contains the following fields:
-event_date — the start date of the session, obtained from the event_timestamp field.
-source — the source of the site visit.
-medium — the medium of the site visit.
-campaign — the name of the site visit campaign.
-user_sessions_count — the number of unique sessions by unique users on the corresponding date and for the corresponding traffic channel.
-visit_to_cart — conversion from the start of a session on the site to adding a product to the cart (on the corresponding date and for the corresponding traffic channel).
-visit_to_checkout — conversion from the start of a session on the site to an attempt to place an order (on the corresponding date and for the corresponding traffic channel).
-Visit_to_purchase — conversion from the beginning of a session on the site to a purchase (on the corresponding date and for the corresponding traffic channel).
+# 🔹 BigQuery & GA4 Analytics Projects
 
-https://console.cloud.google.com/bigquery?ws=!1m7!1m6!12m5!1m3!1sstarry-argon-456808-t3!2sus-central1!3sb3f1d0ae-3d16-46bf-a83e-ec8f47cb52a2!2e1
-Comparison of conversion between different landing pages (Level Medium +):
-To perform this task, I obtained the page path (the path to the page without the domain address and without link parameters) from the page_location in the session start event.
-For each unique page path of the session start, I calculated the following metrics based on data from 2020:
-Number of unique sessions per unique users
-Number of purchases
-Conversion from session start to purchase
+This repository contains sample data analytics projects using BigQuery and GA4, including SQL queries for analysis.
 
-https://console.cloud.google.com/bigquery?ws=!1m7!1m6!12m5!1m3!1sstarry-argon-456808-t3!2sus-central1!3s88109522-b514-4326-9fb8-878406dbd672!2e1
-Checking the correlation between user engagement and purchases (Level Hard):
-For each unique session, determined:
-Whether the user was engaged during this session.
-The total time the user was active during the session from each session event.
-Whether a purchase occurred during the session.
-Calculated the correlation coefficient value
+---
+
+## 1. Conversion Analysis by Date & Traffic Channel (Medium Level)
+- SQL query for a table tracking conversions from session start to purchase.
+- **Metrics:** `user_sessions_count`, `visit_to_cart`, `visit_to_checkout`, `visit_to_purchase`
+- **SQL file:** [conversion_analysis.sql](sql/conversion_analysis.sql)
+
+---
+
+## 2. Landing Page Conversion Comparison (Medium+ Level)
+- SQL query comparing the performance of different landing pages.
+- **Metrics:** number of unique sessions, purchases, and conversion rates for 2020
+- **SQL file:** [landing_page_comparison.sql](sql/landing_page_comparison.sql)
+
+---
+
+## 3. Engagement vs Purchase Correlation (Hard Level)
+- SQL query analyzing user engagement: calculated `engagement` for each session, activity time, and purchase occurrence.
+- Computed the correlation coefficient between engagement and purchase.
+- **SQL file:** [engagement_vs_purchase.sql](sql/engagement_vs_purchase.sql)
+
+---
+
+**Note:** All SQL files are safe to share publicly and can be run in BigQuery with anonymized or sample datasets.
