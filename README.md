@@ -1,4 +1,4 @@
-# 🔹 BigQuery & GA4 Analytics Projects
+# 🔹 BigQuery & GA4 Analytics Projects by Tetiana Trotska
 
 This repository contains sample data analytics projects using BigQuery and GA4, including SQL queries for analysis.
 
