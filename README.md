@@ -14,7 +14,7 @@ This repository contains sample data analytics projects using BigQuery and GA4, 
 ## 2. Landing Page Conversion Comparison (Medium+ Level)
 - SQL query comparing the performance of different landing pages.
 - **Metrics:** number of unique sessions, purchases, and conversion rates for 2020
-- **SQL file:** [https://github.com/TETIANA-TR/SQL/commit/2007c25a3bddeaf24763cfb54d4c4ca198c8b329](sql/landing_page_comparison.sql)
+- **SQL file:** [https://github.com/TETIANA-TR/SQL/commit/2007c25a3bddeaf24763cfb54d4c4ca198c8b329]
 
 ---
 
