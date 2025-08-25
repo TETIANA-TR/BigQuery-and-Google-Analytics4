@@ -21,7 +21,7 @@ This repository contains sample data analytics projects using BigQuery and GA4, 
 ## 3. Engagement vs Purchase Correlation (Hard Level)
 - SQL query analyzing user engagement: calculated `engagement` for each session, activity time, and purchase occurrence.
 - Computed the correlation coefficient between engagement and purchase.
-- **SQL file:** [https://github.com/TETIANA-TR/SQL/blob/main/engagement_vs_purchase.sql]
+- **SQL file:** [https://github.com/TETIANA-TR/SQL/commit/05f195d825898e558ebd957c6410b9f303c94bcf]
 
 ---
 
