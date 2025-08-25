@@ -7,7 +7,7 @@ This repository contains sample data analytics projects using BigQuery and GA4, 
 ## 1. Conversion Analysis by Date & Traffic Channel (Medium Level)
 - SQL query for a table tracking conversions from session start to purchase.
 - **Metrics:** `user_sessions_count`, `visit_to_cart`, `visit_to_checkout`, `visit_to_purchase`
-- **SQL file:** [https://github.com/TETIANA-TR/SQL/commit/2ed726f5f7e5d7568e1fdab4e26040ec835120ca]
+- **SQL file:** [https://github.com/TETIANA-TR/SQL/commit/2ed726f5f7e5d7568e1fdab4e26040ec835120ca] ([link](url))
 
 ---
 
